@@ -6,5 +6,5 @@
 
 module "test" {
   source = "github.com/SRINU42/tf-module-app.git"
-  env = "dev"
+  env = "var.env"
 }
