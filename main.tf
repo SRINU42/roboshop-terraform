@@ -9,8 +9,8 @@
 #  env = var.env 
 #}
 
-module "instance" {
-    for_each =var.components
+module "instances" {
+    for_each = var.components
     source = "github.com/SRINU42/tf-module-app.git"
     component = each.key
     env = var.env
