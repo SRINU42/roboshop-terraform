@@ -1,7 +1,7 @@
 dev:
 	@rm -rf .terraform
 	@terraform init
-	@terraform plan
+#	@terraform plan
 	@terraform apply -auto-approve -var-file=env.dev/main.tfvars
 
 prod:
